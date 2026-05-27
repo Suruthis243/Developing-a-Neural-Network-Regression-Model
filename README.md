@@ -4,10 +4,19 @@
 To develop a neural network regression model for the given dataset.
 
 ## THEORY
-Explain the problem statement
+
+The objective of this experiment is to design, implement, and evaluate a Deep Learning–based Neural Network regression model to predict a continuous output variable from a given set of input features.
+
+In many real-world applications—such as house price prediction, temperature forecasting, sales estimation, or demand prediction—the relationship between input variables and the output is non-linear and complex. Traditional statistical models often fail to capture these patterns effectively. Deep Learning models, particularly Artificial Neural Networks (ANNs), are capable of learning such complex relationships through multiple hidden layers and non-linear activation functions.
+
+In this experiment, a dataset containing multiple independent variables (features) and a dependent variable (target) is provided. The task is to preprocess the data, construct a neural network regression architecture, train the model using backpropagation and gradient descent, and evaluate its performance using appropriate regression metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² score.
+
+The experiment aims to understand how network architecture, learning rate, number of epochs, and activation functions affect the accuracy of regression predictions and to demonstrate the effectiveness of deep learning in solving regression problems.
 
 ## Neural Network Model
-Include the neural network model diagram.
+
+<img width="1043" height="671" alt="image" src="https://github.com/user-attachments/assets/4497a30a-aa5d-42e8-b04d-33afa6e9d146" />
+
 
 ## DESIGN STEPS
 ### STEP 1: 
@@ -48,7 +57,7 @@ Use the trained model to predict  for a new input value .
 
 ### Register Number:212224220114
 
-```
+```python
 
 import torch
 import torch.nn as nn
@@ -138,7 +147,9 @@ print(f'Prediction: {prediction}')
 
 
 ### OUTPUT
-Training Loss Vs Iteration Plot
+<img width="400" height="218" alt="image" src="https://github.com/user-attachments/assets/74cc60e0-ab74-49cd-b9c7-a40492684749" />
+
+### Training Loss Vs Iteration Plot
 
 <img width="762" height="602" alt="image" src="https://github.com/user-attachments/assets/0ded8e7b-0573-448f-ab55-d4e63650b534" />
 
